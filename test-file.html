@@ -1,4 +1,41 @@
+<html>
 
+<head>
+    <title>Your Page Title</title>
+    <style>
+        .custom-list {
+            list-style-type: none;
+            counter-reset: level1;
+        }
+        .custom-list > li {
+            counter-increment: level1;
+            margin-bottom: 10px;
+        }
+        .custom-list > li:before {
+            content: counter(level1) ". ";
+        }
+        .custom-list ul {
+            list-style-type: none;
+            counter-reset: level2;
+            margin-top: 5px;
+            margin-left: 20px;
+        }
+        .custom-list ul > li {
+            counter-increment: level2;
+            margin-bottom: 5px;
+        }
+        .custom-list ul > li:before {
+            content: counter(level1) "." counter(level2, decimal) " ";
+            font-weight: regular;
+        }
+        .custom-list ul.sub-alpha > li:before {
+            content: counter(level2, lower-alpha) ". ";    
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+  <body>
 <ul class="custom-list">
 <li><b>Certain Definitions. Available Services. “ Services ” means the Free Trial Services and Purchased Services. The Services include Company’s cloud-based software platform(s) and mobile application(s) (“ Company Apps ”), including, without limitation, all DroneDeployⓇ and StructionSiteⓇ branded software products, Implementation Services as described below, and the DroneDeploy Academy to the extent set forth in an Order Form or Online Purchase Portal, and includes any Services provided by Company on behalf of its Subsidiaries. “ Free Trial Services ” means Services that Company makes available to Customer free of charge. “ Purchased Services ” means Services that Customer purchases from Company under an Order Form or Online Purchase Portal. Other Definitions. “ Affiliate ” means any entity that directly or indirectly controls, is controlled by, or is under common Control with the subject entity. “ Control ,” for purposes of this definition, means direct or indirect ownership or control of more than 50% of the voting interests of the subject entity. “ Company Content ” means any data, information and other content that is made available via the Services to Customer, excluding Third Party Services and Customer Content. “ Control ” means direct or indirect ownership or control of more than 50% of the voting interests of the subject entity. “ Customer Content ” means the electronic data, information and other content that Customer uploads to, integrates with or makes available through the Services or otherwise to Company, and any content that Customer collects or generates in its use of the Services, including messages, reviews, video, maps, models, folders, data, text, photographs, images, and data gathered by a Robot, camera or other User device. “ Non-Company Apps ” means software applications that are not Company branded, including apps in any Company app marketplace. “ Order Form ” means an order form signed by both parties. “ Online Purchase Portal “ means the Company online portal used to acquire the Services. “ Robot ” means an unmanned aerial vehicle (UAV), drone or other robot that Customer or its Users use in connection with the Services. “ Third Party Content ” means information obtained by Company from publicly available sources, from third-party content providers, or from third-party software providers, and made available to Customer through the Services, including linked information. “ Third Party Services ” means Non-Company Apps and Third Party Content. “ User ” means a unique individual end user accessing or using the Services under Customer’s account, also referred to as a “subscriber”.</b><ul>
 <li>Available Services. “ Services ” means the Free Trial Services and Purchased Services. The Services include Company’s cloud-based software platform(s) and mobile application(s) (“ Company Apps ”), including, without limitation, all DroneDeployⓇ and StructionSiteⓇ branded software products, Implementation Services as described below, and the DroneDeploy Academy to the extent set forth in an Order Form or Online Purchase Portal, and includes any Services provided by Company on behalf of its Subsidiaries. “ Free Trial Services ” means Services that Company makes available to Customer free of charge. “ Purchased Services ” means Services that Customer purchases from Company under an Order Form or Online Purchase Portal.<ul class="sub-alpha">
@@ -316,4 +353,6 @@
 <li><b>The parties will address any dispute arising under or related to this Agreement in the federal or state courts in San Francisco County, California. Each party waives any right to a jury trial and right to participate in any class action lawsuit.  All claims arising under or related to this Agreement must be brought in the initiating party’s individual capacity, not as a plaintiff or class member in a class action or similar proceeding.</b></li>
 </ul>
 
+  </body>
+</html>
   
